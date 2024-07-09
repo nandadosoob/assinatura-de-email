@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppings, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#box1 {
+    width: 540px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#fotoERedes {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#dadosTotais{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+#redes {
+    width: 60%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+
+#emailBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#linkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+#fotoPerfil {
+    width: 130px;
+    border-radius: 1000px;
+    margin: 0 20px;
+}
+
+#linhaVertical {
+    height: 190px;
+    margin-left: 2px solid;
+    margin-top: 30px;
+}
+
+#linhaHorizontal {
+    margin: 15px 15px 15px -20px;
+    width: 80%;
+}
+
+#logoEmpresa {
+    width: 85px;
+}
+
+#cargo{
+    color: gray;
+    padding: 5px 0;
+}
+
+#icon{
+    width: 25px;
+    margin-right: 5px;
+}
+
+#linkSite{
+    text-decoration: none;
+    color: darkgreen;
+}

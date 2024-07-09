@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppings, sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        #box1 {
+            width: 540px;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #fotoERedes {
+            width: 35%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #dadosTotais {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 20px;
+        }
+
+        #redes {
+            width: 60%;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-self: center;
+        }
+
+
+        #emailBox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        #linkBox {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+
+        #fotoPerfil {
+            width: 130px;
+            border-radius: 1000px;
+            margin: 0 20px;
+        }
+
+        #linhaVertical {
+            height: 190px;
+            margin-left: 2px solid;
+            margin-top: 30px;
+        }
+
+        #linhaHorizontal {
+            margin: 15px 15px 15px -20px;
+            width: 80%;
+        }
+
+        #logoEmpresa {
+            width: 85px;
+        }
+
+        #cargo {
+            color: gray;
+            padding: 5px 0;
+        }
+
+        #icon {
+            width: 25px;
+            margin-right: 5px;
+        }
+
+        #linkSite {
+            text-decoration: none;
+            color: darkgreen;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">
+            <div id="fotoERedes">
+
+
+                <img id="fotoPerfil" src="https://media.licdn.com/dms/image/D4D03AQH4NR0UhxPpkA/profile-displayphoto-shrink_200_200/0/1692709047640?e=2147483647&v=beta&t=sjDh00rbLUVcDzUQzYoWbsOXvOh81W90XK67Jqsbab8">
+                <div id="redes">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0xMjgsODBhNDgsNDgsMCwxLDAsNDgsNDhBNDguMDUsNDguMDUsMCwwLDAsMTI4LDgwWm0wLDgwYTMyLDMyLDAsMSwxLDMyLTMyQTMyLDMyLDAsMCwxLDEyOCwxNjBaTTE3NiwyNEg4MEE1Ni4wNiw1Ni4wNiwwLDAsMCwyNCw4MHY5NmE1Ni4wNiw1Ni4wNiwwLDAsMCw1Niw1Nmg5NmE1Ni4wNiw1Ni4wNiwwLDAsMCw1Ni01NlY4MEE1Ni4wNiw1Ni4wNiwwLDAsMCwxNzYsMjRabTQwLDE1MmE0MCw0MCwwLDAsMS00MCw0MEg4MGE0MCw0MCwwLDAsMS00MC00MFY4MEE0MCw0MCwwLDAsMSw4MCw0MGg5NmE0MCw0MCwwLDAsMSw0MCw0MFpNMTkyLDc2YTEyLDEyLDAsMSwxLTEyLTEyQTEyLDEyLDAsMCwxLDE5Miw3NloiPjwvcGF0aD48L3N2Zz4=" id="icon">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMTYsMjRINDBBMTYsMTYsMCwwLDAsMjQsNDBWMjE2YTE2LDE2LDAsMCwwLDE2LDE2SDIxNmExNiwxNiwwLDAsMCwxNi0xNlY0MEExNiwxNiwwLDAsMCwyMTYsMjRabTAsMTkySDQwVjQwSDIxNlYyMTZaTTk2LDExMnY2NGE4LDgsMCwwLDEtMTYsMFYxMTJhOCw4LDAsMCwxLDE2LDBabTg4LDI4djM2YTgsOCwwLDAsMS0xNiwwVjE0MGEyMCwyMCwwLDAsMC00MCwwdjM2YTgsOCwwLDAsMS0xNiwwVjExMmE4LDgsMCwwLDEsMTUuNzktMS43OEEzNiwzNiwwLDAsMSwxODQsMTQwWk0xMDAsODRBMTIsMTIsMCwxLDEsODgsNzIsMTIsMTIsMCwwLDEsMTAwLDg0WiI+PC9wYXRoPjwvc3ZnPg==" id="icon">
+                </div>
+            </div>
+
+            <!-- <hr id="linhaVertical"> -->
+            <div id="dadosTotais">
+
+                <div id="dadosEspecificos">
+                    <p><b>Daniely Rocha</b></p>
+                    <p id="cargo">Coord. de Tecnologia da Informação (TI)</p>
+                    <div id="emailBox">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yMjQsNDhIMzJhOCw4LDAsMCwwLTgsOFYxOTJhMTYsMTYsMCwwLDAsMTYsMTZIMjE2YTE2LDE2LDAsMCwwLDE2LTE2VjU2QTgsOCwwLDAsMCwyMjQsNDhaTTIwMy40Myw2NCwxMjgsMTMzLjE1LDUyLjU3LDY0Wk0yMTYsMTkySDQwVjc0LjE5bDgyLjU5LDc1LjcxYTgsOCwwLDAsMCwxMC44MiwwTDIxNiw3NC4xOVYxOTJaIj48L3BhdGg+PC9zdmc+" id="icon">
+                        <p>daniely@biografia365.com.br</p>
+                    </div>
+
+                    <div id="linkBox">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0iIzAwMDAwMCIgdmlld0JveD0iMCAwIDI1NiAyNTYiPjxwYXRoIGQ9Ik0yNDAsODguMjNhNTQuNDMsNTQuNDMsMCwwLDEtMTYsMzdMMTg5LjI1LDE2MGE1NC4yNyw1NC4yNywwLDAsMS0zOC42MywxNmgtLjA1QTU0LjYzLDU0LjYzLDAsMCwxLDk2LDExOS44NGE4LDgsMCwwLDEsMTYsLjQ1QTM4LjYyLDM4LjYyLDAsMCwwLDE1MC41OCwxNjBoMGEzOC4zOSwzOC4zOSwwLDAsMCwyNy4zMS0xMS4zMWwzNC43NS0zNC43NWEzOC42MywzOC42MywwLDAsMC01NC42My01NC42M2wtMTEsMTFBOCw4LDAsMCwxLDEzNS43LDU5bDExLTExQTU0LjY1LDU0LjY1LDAsMCwxLDIyNCw0OCw1NC44Niw1NC44NiwwLDAsMSwyNDAsODguMjNaTTEwOSwxODUuNjZsLTExLDExQTM4LjQxLDM4LjQxLDAsMCwxLDcwLjYsMjA4aDBhMzguNjMsMzguNjMsMCwwLDEtMjcuMjktNjUuOTRMNzgsMTA3LjMxQTM4LjYzLDM4LjYzLDAsMCwxLDE0NCwxMzUuNzFhOCw4LDAsMCwwLDE2LC40NUE1NC44Niw1NC44NiwwLDAsMCwxNDQsOTZhNTQuNjUsNTQuNjUsMCwwLDAtNzcuMjcsMEwzMiwxMzAuNzVBNTQuNjIsNTQuNjIsMCwwLDAsNzAuNTYsMjI0aDBhNTQuMjgsNTQuMjgsMCwwLDAsMzguNjQtMTZsMTEtMTFBOCw4LDAsMCwwLDEwOSwxODUuNjZaIj48L3BhdGg+PC9zdmc+" id="icon">
+                        <a href="https://playfortalece.com/" id="linkSite">www.playfortalece.com</a>
+                    </div>
+                </div>
+
+
+                <!-- <hr id="linhaHorizontal"> -->
+                <img src="./imagens/biografiaLogo-removebg-preview.png" id="logoEmpresa">
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div id="container2">
+                <div id="box2">
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>
